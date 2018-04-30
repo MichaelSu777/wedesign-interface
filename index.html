@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WeDesign - Interface</title>
+
+		<meta name="keywords" content="Web Design,WeDesign,Design,Web,Web Creation"/>
+		<meta name="author" content="Abhay Zala, Adi Bhujle, Michael Su" />
+		<meta charset="UTF-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/Interface.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="css/Animation.css" type="text/css" />
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/Interface.js"></script>
+		<script type="text/javascript" src="js/Animation.js"></script>
+	</head>
+	
+    <body>
+    	<div id="container-div">
+	    	<div id="viewport-selection">
+	    		<div class="viewport-icon-holder" id="laptop" onclick="laptopClicked();">
+					<img class="viewport-icon" src="imgs/laptop.png" />
+				</div>
+				<div class="viewport-icon-holder" id="phone" onclick="phoneClicked();">
+					<img class="viewport-icon" style="width: 28%;" src="imgs/phone.png" />
+				</div>
+	    	</div>
+	    	<iframe scrolling="no" id="chat" src="chat.html" frameborder="0" style="overflow-x: hidden; top: 19%;"></iframe>
+   		</div>
+   		
+   		<div id="about-site-background"></div>
+   		<div id="about-site-popup">
+   			<h1 style="font-size: 40px; position: absolute; top: -20px; left: 18%; text-decoration: underline; transform: translateX(-50%);">Site Info</h1>
+   			<div id="x-button" onclick="javascript:hideAboutPopup();">
+   				<div id="left-line" class="menubarstrip" style="transform: rotate(-45deg);"></div>
+   				<div id="right-line" class="menubarstrip" style="transform: rotate(45deg);"></div>
+   			</div>
+   			<div id="meta-data-container" style="height: 74.3%; width: 40%; border: solid 1px black;">
+   				<br><br><br><br>
+   				<div id="title"></div>
+   				<div id="icon"></div>
+   				<div id="keywords"></div>
+   				<div id="author"></div>
+   				<div id="description"></div>
+   				<div id="viewport"></div>
+   			</div>
+   			<div id="site-files-container" style="height: 25%; width: 40%; border: solid 1px black;"></div>
+   			<div id="site-info-conatainer" style="position: absolute; bottom: 0px; right: 0px; height: 25%; width: 59.7%; border: solid 1px black;"></div>
+   			<img id="site_screenshot" src="imgs/troll.png" style="position: absolute; top: 15%; right: 10%; border: solid 1px black; width: 40%;" />
+   		</div>
+   		
+    	<div id="dropdown-button"></div>
+		<div id="menu-dropdown">
+			<div id="dropdown-items" style="line-height: 14vh;">
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="live-view-drop" href="javascript:void(0);">Live View</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="about-site-drop" href="javascript:showAboutCustomerSite();">About Your Site</a>
+				</div>
+				<br>
+				<div class="underline-container">
+					<div class="underline"></div>
+					<div class="hide-underline"></div>
+					<a class="nav-link" id="site-plan-drop" href="sitemap.html">Website Plan</a>
+				</div>
+			</div>
+		</div>
+    	
+    	<div id="nav-bar">
+    		<img id="logo" src="imgs/Logo.png" />
+    		<img id="interface-logo" src="imgs/Interface_logo.png" />
+    		
+    		<div class="underline-container">
+				<div class="underline"></div>
+				<div class="hide-underline"></div>
+				<a class="nav-link" id="live-view" href="javascript:void(0);">Live View</a>
+			</div>
+			<div class="underline-container">
+				<div class="underline"></div>
+				<div class="hide-underline"></div>
+				<a class="nav-link" id="about-site" href="javascript:showAboutCustomerSite();">About Your Site</a>
+			</div>
+			<div class="underline-container">
+				<div class="underline"></div>
+				<div class="hide-underline"></div>
+				<a class="nav-link" id="site-plan" href="sitemap.html">Website Plan</a>
+			</div>
+    	</div>
+    	
+    	<iframe id="customer-site" class="scrollbar" style="position: absolute;" width="83%" height="93%" src="https://preview.c9users.io/purpleblue/wedesign-workspace/index.html?_c9_id=livepreview11&_c9_host=https://ide.c9.io" frameborder="0"></iframe>
+		
+	</body>
+</html>

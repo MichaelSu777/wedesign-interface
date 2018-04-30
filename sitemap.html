@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jQuery -->
+        	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+	<script type="text/javascript" src="js/imageMapResizer.js"></script>
+      	<link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/toolbar.css" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="css/Animation.css" type="text/css" />
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<script type="text/javascript" src="js/Animation.js"></script>
+        <script>
+            
+ function transform(e){
+$(document).ready(function() {
+    $('map').imageMapResize();
+});
+
+    e = e || window.event;
+    e = e.target || e.srcElement;
+    var id = e.id;
+    var idd = $(id);
+
+    document.getElementById('description').style.display = "block";
+    document.getElementById('dd').style.display = "block";
+
+      
+      //document.getElementById('sitemap').style.width = '90%';
+           // document.getElementById('sitemap-map').style.width = '50%';
+            document.getElementById('sitemap').style.marginLeft = '0%';
+            
+//document.getElementById('null').style.display = 'inline';
+    if (id == 'image-1'){
+        document.getElementById('description').innerHTML = 'This is the homepage';
+        document.getElementById("y").src="imgs/photo-1.png";
+    } else if (id == 'image-2'){
+        document.getElementById('description').innerHTML = 'This is the main navigation';
+        document.getElementById("y").src="imgs/photo-2.png";
+    } else if (id == 'image-3'){
+        document.getElementById('description').innerHTML = 'This is the nav bar';
+        document.getElementById("y").src="imgs/photo-3.png";
+    } else if (id == 'image-4'){
+        document.getElementById('description').innerHTML = 'These are the link paths';
+        document.getElementById("y").src="imgs/photo-4.png";
+    } else if (id == 'image-5'){
+        document.getElementById('description').innerHTML = 'This is the home link';
+        document.getElementById("y").src="imgs/photo-5.png";
+    } else if (id == 'image-6'){
+        document.getElementById('description').innerHTML = 'This is the products and services page';
+        document.getElementById("y").src="imgs/photo-6.png";
+    } else if (id == 'image-7'){
+        document.getElementById('description').innerHTML = 'This is the our work page';
+        document.getElementById("y").src="imgs/photo-7.png";
+    }else if (id == 'image-8'){
+        document.getElementById('description').innerHTML = 'This is the about us page';
+        document.getElementById("y").src="imgs/photo-8.png";
+    }else if (id == 'image-9'){
+        document.getElementById('description').innerHTML = 'This is the buy/order now page';
+        document.getElementById("y").src="imgs/photo-9.png";
+    }else if (id == 'image-10'){
+        document.getElementById('description').innerHTML = 'This is the live view page';
+        document.getElementById("y").src="imgs/photo-10.png";
+    }else if (id == 'image-11'){
+        document.getElementById('description').innerHTML = 'About your site';
+        document.getElementById("y").src="imgs/photo-11.png";
+    }else if (id == 'image-12'){
+        document.getElementById('description').innerHTML = 'website plan';
+        document.getElementById("y").src="imgs/photo-12.png";
+    }else if (id == 'image-13'){
+        document.getElementById('description').innerHTML = 'This is the live chat page';
+        document.getElementById("y").src="imgs/photo-13.png";
+    }else if (id == 'image-14'){
+        document.getElementById('description').innerHTML = 'Who we are page';
+        document.getElementById("y").src="imgs/photo-14.png";
+    }else if (id == 'image-15'){
+        document.getElementById('description').innerHTML = 'Company profile';
+        document.getElementById("y").src="imgs/photo-15.png";
+    } else if (id == 'image-16'){
+        document.getElementById('description').innerHTML = 'Contact us';
+        document.getElementById("y").src="imgs/photo-16.png";
+    } else if (id == 'image-17'){
+        document.getElementById('description').innerHTML = 'Mission statement';
+        document.getElementById("y").src="imgs/photo-17.png";
+    }
+};
+
+        </script>
+        <style>
+           .connector{
+    
+           }
+            .row{
+                margin-right: 80px;
+                margin-top: 0%;
+            }
+            #row-down img{
+                display: block;
+                
+            }
+            #last img{
+                display: block;
+            }
+            .new{
+                margin-top: 0%;
+                margin-right: 80px;
+            }
+        </style>
+    </head>
+    
+    <body style="" id="body">
+        	<div id="nav-bar" style="z-index: 100;">
+    		<img id="logo" src="imgs/Logo.png" />
+    		<img id="interface-logo" src="imgs/Interface_logo.png" />
+    		
+    		<div class="underline-container">
+				<div class="underline"></div>
+				<div class="hide-underline"></div>
+				<a class="nav-link" id="live-view" href="javascript:void(0);">Live View</a>
+			</div>
+			<div class="underline-container">
+				<div class="underline"></div>
+				<div class="hide-underline"></div>
+				<a class="nav-link" id="about-site" href="javascript:showAboutCustomerSite();">About Your Site</a>
+			</div>
+			<div class="underline-container">
+				<div class="underline"></div>
+				<div class="hide-underline"></div>
+				<a class="nav-link" id="site-plan" href="sitemap.html">Website Plan</a>
+			</div>
+    	</div>
+    	
+        <img usemap="#sitemap" id="sitemap" src="imgs/WeDesignMap-white.png" style="width: 100%;"/>
+        <map name="sitemap">
+		<area id="image-1" shape="rect" coords="5,10,151,182" onclick="transform()">
+		<area id="image-2" shape="rect" coords="260,34,478,80" onclick="transform()">
+		<area id="image-3" shape="rect" coords="580,2,1190, 90" onclick="transform()">
+		<area id="image-4" shape="rect" coords="80,190,1051,350" onclick="transform()">
+		<area id="image-5" shape="rect" coords="10,360,150,540" onclick="transform()">
+		<area id="image-6" shape="rect" coords="240,360,385,542" onclick="transform()">
+		<area id="image-7" shape="rect" coords="482,362,630,540" onclick="transform()">
+		<area id="image-8" shape="rect" coords="735,360,882,535" onclick="transform()">
+		<area id="image-9" shape="rect" coords="960,360,1110,540" onclick="transform()">
+		<area id="image-10" shape="rect" coords="400,578,505,698" onclick="transform()">
+		<area id="image-11" shape="rect" coords="400,730,505,848" onclick="transform()">
+		<area id="image-12" shape="rect" coords="400,880,505,991" onclick="transform()">
+		<area id="image-13" shape="rect" coords="400,122,505,1150" onclick="transform()">
+		<area id="image-14" shape="rect" coords="901,580,1015,701" onclick="transform()">
+		<area id="image-15" shape="rect" coords="901,730,1015,851" onclick="transform()">
+		<area id="image-16" shape="rect" coords="901,882,1015,1005" onclick="transform()">
+		<area id="image-17" shape="rect" coords="901,1030,1015,1151" onclick="transform()">
+	</map>
+          <script>
+        document.getElementById('sitemap').style.width = '50%';
+        document.getElementById('sitemap').style.marginLeft = '25%';
+         $('map').imageMapResize();
+        </script>
+
+         <div id="genero" style="float: right; width: 25%;">
+    <div id="description" style="float: right; width: 100%; padding-top: 56.25%; border: 2px solid black; display: none;">jfdkjfkdsfjkdlfj</div>
+    
+    <div id="dd" style="float: right; height: 50%; width: 100%; margin-top: 30%; border: 2px solid black; display: none;"><img id="y" style="width: 100%; height: 100%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_NyelqJnWF0eIhE8SWkmldCSprbn7T0y9U-Kc8OgdZRc9xwFYA" /></div>
+   </div>
+
+      <script>
+
+      </script>
+    </body>
+</html>

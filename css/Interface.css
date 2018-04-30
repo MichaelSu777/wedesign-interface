@@ -1,0 +1,170 @@
+#logo {
+    height: 80%;
+    min-height: 80%;
+    position: relative;
+    top: -1px;
+}
+#interface-logo {
+    position: relative;
+    height: 40%;
+    min-height: 2.7%;
+    top: -8.5px;
+}
+#chat {
+	overflow-x: hidden;
+	position: absolute;
+	top: 12.2%;
+	right: 0%;
+	clear: both;
+	width: 17%;
+	height: 100%;
+	z-index: 10;
+}
+#nav-bar {
+    background: white;
+    width: 100%;
+    height: 7%;
+    border-bottom: dashed 1px black;
+}
+#viewport-selection {
+    background: gray;
+    width: 17%;
+    height: 12%;
+    position: absolute;
+    right: 0;
+    top: 7%;
+}
+#container-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    border: 1px dashed #FFF;
+}
+#laptop {
+    position: absolute;
+    border: solid 3px red;
+}
+#phone {
+    position: absolute;
+    right: 0;
+}
+.viewport-icon-holder {
+    width: 49%;
+    text-align: center;
+}
+.viewport-icon {
+    width: 100%;
+}
+html {
+    margin:0;
+	padding:0;
+	height: 100%;
+	font-family: Raleway;
+}
+body {
+	margin: 0;
+	height: 100%;
+    background: white;
+    overflow: hidden;
+}
+ul li a {
+    position: relative;
+}
+a {
+    color: navy;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.underline, .hide-underline {
+    position: absolute;
+    width: 0%;
+    background: navy;
+    z-index: 1;
+   	top: 80%;
+   	height: 2px;
+}
+.underline-container {
+    position: relative;
+    display: inline-block;
+    animation: bounceDown 0.5s 1 ease forwards;
+    margin-left: 30px;
+}
+.underline-container:hover {
+    animation: bounceUp 0.5s 1 ease forwards;
+}
+.noselect {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+.nav-link {
+	font-size: 30px;
+	position: relative;
+    top: -8px;
+}
+#dropdown-button {
+    position: absolute;
+    left: 75%;
+    z-index: 9;
+}
+#menu-dropdown {
+	z-index: 4;
+	overflow: hidden;
+	position: absolute;
+	background-color: white;
+	top: 7%;
+	width: 83%;
+	height: 0%;
+	font-size: 45px;
+	color: navy;
+}
+#dropdown-items {
+	position: absolute;
+	text-align: center;
+	top: 10%;
+	width: 101%;
+	z-index: 4;
+}
+.menubarstrip {
+    width: 40px;
+    height: 3px;
+    background: grey;
+    position: absolute;
+    left: 0%;
+    transform: rotate(0deg);
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+#about-site-background {
+    position: absolute;
+    background: rgba(30, 30, 30, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    opacity: 0;
+    display: none;
+}
+#about-site-popup {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    width: 75%;
+    height: 75%;
+    opacity: 0;
+    z-index: 11;
+    display: none;
+}
+#x-button {
+    position: relative;
+    top: 20px;
+    right: 40px;
+    height: auto;
+    float: right;
+}
